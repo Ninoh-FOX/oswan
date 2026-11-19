@@ -24,7 +24,7 @@ void exit_button(void)
 	keys = SDL_GetKeyState(NULL);
 	/* Get to Menu hotkey */
 	if ( ((keys[SDLK_ESCAPE] == SDL_PRESSED) && (keys[SDLK_RETURN] == SDL_PRESSED)) 
-	#ifdef RG99
+	#if defined(RG99) || defined(KORIKI)
 	|| keys[SDLK_PAGEUP] == SDL_PRESSED
 	#endif
 	) 
